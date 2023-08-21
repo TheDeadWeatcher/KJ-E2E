@@ -1,0 +1,24 @@
+{
+  "name": "kj-e2e",
+  "version": "1.0.0",
+  "description": "Testy E2E dla kj desgin ",
+  "main": "index.js",
+  "scripts": {
+    "open": "npx cypress open",
+    "spec": "npx cypress run --spec 'cypress/e2e/audit.cy.js'",
+    "all": "npx cypress run --e2e 'cypress/e2e/*.cy.js'",
+    "chrome": "npx cypress run --browser chrome --spec 'cypress/e2e/home.cy.js'",
+    "firefox": "npm run spec -- --browser firefox",
+    "edge": "npm run spec -- --browser edge",
+    "browser": "npm run spec -- --browser firefox & npm run spec -- --browser edge npm run spec -- --browser chrome",
+    "browserAll": "npm run all -- --browser firefox & npm run all -- --browser edge npm run all -- --browser chrome",
+    "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
+    "regression": "npm run delete-results && npm run delete-mochawesome-report && npm run spec && npm run mochawesome-merge"
+  },
+  "author": "Bartosz Jasyk",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}
