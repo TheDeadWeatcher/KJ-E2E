@@ -1,3 +1,12 @@
 {
-  "homeUrl": "https://www.katarzynajasyk.com/"
+  "homeUrl": "https://www.katarzynajasyk.com/",
+  "kontaktUrl": "https://www.katarzynajasyk.com/kontakt/",
+  "aboutUrl": "https://www.katarzynajasyk.com/o-nas/",
+  "obiektyUrl": "https://www.katarzynajasyk.com/oswietlenie/",
+  "mebleUrl": "https://www.katarzynajasyk.com/meble/", 
+  "wnetrzaUrl": "https://www.katarzynajasyk.com/media/", 
+  "prawaUrl": "https://www.katarzynajasyk.com/prawa-autorskie/"
+
+
+
 }

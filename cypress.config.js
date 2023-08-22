@@ -14,7 +14,6 @@ module.exports = defineConfig({
         lighthouse: lighthouse(), // calling the function is important
       });
     },
-
     baseUrl: 'https://www.katarzynajasyk.com/',
     experimentalRunAllSpecs: false,
     bloclHosts: ['www.google-analytics.com', 'ssl.google-analytics.com'],
