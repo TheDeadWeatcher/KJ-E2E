@@ -2,6 +2,7 @@ const { defineConfig } = require('cypress');
 const { lighthouse, prepareAudit } = require('@cypress-audit/lighthouse');
 
 module.exports = defineConfig({
+  projectId: 'qi37yk',
   // reporter: 'cypress-mochawesome-reporter',
   e2e: {
     setupNodeEvents(on, config) {

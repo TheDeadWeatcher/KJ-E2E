@@ -25,7 +25,7 @@ describe('KJ - Design /  About - E2E', () => {
   });
 
   it('Should check visibility of seciton about, verify correct url of all links', { browser: '!firefox' }, () => {
-    cy.checkLinksUrl('.tb_text_wrap a');
+    cy.checkLinksUrl('.tb_text_wrap a'); // firefox wraping empty link
   });
 
   // it.only('only for firefox', () => {

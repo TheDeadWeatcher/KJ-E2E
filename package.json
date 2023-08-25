@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "open": "npx cypress open",
-    "spec": "npx cypress run --spec 'cypress/e2e/contact.cy.js'",
+    "spec": "npx cypress run --spec 'cypress/e2e/audit.cy.js'",
     "all": "npx cypress run --e2e 'cypress/e2e/*.cy.js'",
-    "chrome": "npx cypress run --browser chrome --spec 'cypress/e2e/home.cy.js'",
+    "chrome": "npx cypress run --browser chrome --spec 'cypress/e2e/*.cy.js' --record --key ec1d8e6b-7144-4fef-b4c5-34438da12744",
     "firefox": "npm run spec -- --browser firefox",
     "edge": "npm run spec -- --browser edge",
     "browser": "npm run spec -- --browser firefox & npm run spec -- --browser edge npm run spec -- --browser chrome",
-    "browserAll": "npm run all -- --browser firefox & npm run all -- --browser edge npm run all -- --browser chrome",
+    "browserAll": "npm run all -- --browser firefox & npm run all -- --browser edge npm run all -- --browser chrome --record --key ec1d8e6b-7144-4fef-b4c5-34438da12744",
     "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
     "regression": "npm run delete-results && npm run delete-mochawesome-report && npm run spec && npm run mochawesome-merge"

@@ -16,7 +16,7 @@ describe('KJ - Design /  Contact page - E2E', () => {
     cy.title().should('contain', 'Contact – KJ Design');
   });
 
-  it.only('Should check h1, also check contact form', () => {
+  it('Should check h1, also check contact form', () => {
     cy.get('#wpforms-504-field_0').should('be.visible');
     cy.get('#wpforms-504-field_0').type('Bartosz', { force: true });
     cy.get('#wpforms-504-field_0-last').should('be.visible');

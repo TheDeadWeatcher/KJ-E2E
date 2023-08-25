@@ -17,7 +17,7 @@ describe('KJ - Design /  Home page - E2E', () => {
   });
 
   it('Should check all main nav links', () => {
-    cy.checkLinksUrl('[data-css_id="to7d484"] a');
+    cy.checkLinksUrl('[data-css_id="to7d484"] a'); // firefox wraping empty link
   });
 
   it('Should check all main category links and h1', () => {
@@ -47,7 +47,7 @@ describe('KJ - Design /  Home page - E2E', () => {
 
   it('Should check all links and img in footer section ', () => {
     cy.get('.tb_leql329 a').should('have.length', 3);
-    cy.checkLinksUrl('.tb_leql329 a');
+    cy.checkLinksUrl('.tb_leql329 a'); // firefox wraping empty link
     cy.get('.tb_3w03329 img').should('exist');
     cy.checkTxt('.tb_l0u1330 p');
     cy.get('#wpfront-scroll-top-container').should('exist').click({ force: true });
