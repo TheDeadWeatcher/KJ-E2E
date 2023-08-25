@@ -15,7 +15,7 @@ module.exports = defineConfig({
       });
     },
     baseUrl: 'https://www.katarzynajasyk.com/',
-    experimentalRunAllSpecs: false,
+    // experimentalRunAllSpecs: false,
     bloclHosts: ['www.google-analytics.com', 'ssl.google-analytics.com'],
     includeShadowDom: true,
     viewportHeight: 1080,

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('KJ - Design /  Home page - E2E', () => {
+describe('KJ - Design /  Contact page - E2E', () => {
   before(function () {
     cy.fixture('pagesUrl').then(function (url) {
       globalThis.url = url;
