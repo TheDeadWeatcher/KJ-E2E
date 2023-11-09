@@ -17,7 +17,7 @@ describe('KJ - Design /  Objects page - E2E', () => {
   });
 
   it('Should check visiblity and lenght of article', () => {
-    cy.checkLength('[data-css_id="9sa3873"] article', 14);
+    cy.checkLength('[data-css_id="9sa3873"] article', 16);
   });
 
   it('Should check correct url of all article', () => {

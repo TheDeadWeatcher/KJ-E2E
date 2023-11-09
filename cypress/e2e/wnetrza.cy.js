@@ -17,7 +17,7 @@ describe('KJ - Design /  Wnętrza page - E2E', () => {
   });
 
   it('Should check visiblity and lenght of article', () => {
-    cy.checkLength('[data-css_id="9sa3873"] article', 5);
+    cy.checkLength('[data-css_id="9sa3873"] article', 10);
   });
 
   it('Should check correct url of all article', () => {
